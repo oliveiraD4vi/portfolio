@@ -1,0 +1,43 @@
+@import "../../../../variables.scss";
+
+header.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  background-color: $background;
+
+  & > .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+
+          & > a {
+            display: flex;
+            gap: .25rem;
+
+            & > span:last-child {
+              color: $secondary-color;
+              transition: all ease-in-out 200ms;
+
+              &:hover {
+                color: $secondary-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
