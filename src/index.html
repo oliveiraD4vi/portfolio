@@ -27,6 +27,8 @@
       display: none;
       box-shadow: 0 2px 2px 0 #EB5E281A;
       border: 1px solid #EB5E28;
+      flex-direction: column;
+      gap: .5rem;
     }
 
     .cookieConsentContainer .cookieTitle h1 {
@@ -44,7 +46,6 @@
       font-size: .85rem;
       line-height: 20px;
       display: block;
-      margin-top: 10px;
     }
 
     .cookieConsentContainer .cookieDesc p {
@@ -58,7 +59,7 @@
       border: 1px solid #EB5E28;
       font-size: .85rem;
       font-weight: bold;
-      margin-top: 14px;
+      margin: 0;
       background: transparent;
       box-sizing: border-box;
       padding: 1rem 1.5rem;
@@ -98,7 +99,7 @@
     function pureFadeIn(elementId, displayStyle) {
       var element = document.getElementById(elementId);
       element.style.opacity = 0;
-      element.style.display = displayStyle || "block";
+      element.style.display = displayStyle || "flex";
 
       function fade() {
         var opacity = parseFloat(element.style.opacity);
