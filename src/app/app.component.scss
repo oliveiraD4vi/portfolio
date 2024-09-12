@@ -3,4 +3,8 @@
 #app-container {
   min-height: 100vh;
   background-color: $background;
+
+  main {
+    width: 100%;
+  }
 }
