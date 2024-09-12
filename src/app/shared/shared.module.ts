@@ -1,23 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { NgZorroAntdModule } from './antd.module';
 
 @NgModule({
 	declarations: [],
 	imports: [
 		CommonModule,
-		FormsModule,
-		ReactiveFormsModule,
 		RouterLink,
 		RouterOutlet,
+    NgZorroAntdModule
 	],
 	exports: [
 		CommonModule,
-		FormsModule,
 		RouterLink,
-		ReactiveFormsModule,
 		RouterOutlet,
+    NgZorroAntdModule
 	],
   providers: []
 })
