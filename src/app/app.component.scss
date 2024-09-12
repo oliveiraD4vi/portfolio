@@ -1,11 +1,6 @@
+@import "../variables.scss";
+
 #app-container {
   min-height: 100vh;
   background-color: $background;
-
-  main,
-  app-header,
-  app-footer,
-  app-top-ad {
-    width: 100%;
-  }
 }
