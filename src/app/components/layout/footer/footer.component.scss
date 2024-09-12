@@ -1,0 +1,12 @@
+@import "../../../../variables.scss";
+
+footer.footer {
+  & > .content {
+    border-top: 1px solid $black-100;
+    text-align: center;
+
+    & > .icon {
+      color: $primary-color;
+    }
+  }
+}
