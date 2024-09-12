@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+
+.page.container {
+  display: flex;
+  justify-content: center;
+
+  & > .content {
+    flex: 1;
+    padding: 1rem;
+    max-width: $max-screen-width;
+  }
+}
+
+.invalid-field {
+  color: $invalid;
+}
+
+.reflect {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -170px;
+    height: 100%;
+    width: 170px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: loading 3s infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      left: -170px;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 500ms;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.skeleton {
+  width: 100%;
+  background-color: $white-700;
+  position: relative;
+}

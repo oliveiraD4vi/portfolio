@@ -1,0 +1,42 @@
+// --- SCREEN SIZE ---
+$max-screen-width: 1200px;
+$wide-screen: 1200px;
+$medium-screen: 992px;
+$small-screen: 768px;
+$small-medium-screen: 580px;
+$reduced-screen: 350px;
+
+// --- SHADOW ---
+$shadow: 0 2px 2px 0 rgba($color: #000000, $alpha: 0.1);
+$reverse-shadow: 0 -2px -2px 0 rgba($color: #000000, $alpha: 0.1);
+
+// --- CUSTOM COLORS ---
+$primary-color: #B6061B;
+$primary-hover: #dd4c5d;
+$secondary-color: #F0C116;
+$secondary-hover: #fad85d;
+$tertiary-color: #025625;
+$background: #FAFAFA;
+
+// --- DEFAULT COLORS ---
+$white-900: #FFFFFF;
+$white-800: #F7F7F7;
+$white-700: #F0F0F0;
+$white-500: #E0E0E0;
+$white-300: #D0D0D0;
+$white-100: #C0C0C0;
+
+$black-900: #000000;
+$black-700: #333333;
+$black-500: #666666;
+$black-300: #999999;
+$black-100: #CCCCCC;
+
+$invalid: #c1001c;
+$invalid-hover: #c02a40;
+$success: #11ca00;
+$success-hover: #55c24b;
+$neutral: #006fca;
+$neutral-hover: #498bc2;
+
+$text-color: #333333;
