@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SharedModule } from '../../../shared/shared.module';
 
 @Component({
@@ -8,4 +8,6 @@ import { SharedModule } from '../../../shared/shared.module';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  @Input() isMobile: boolean = false;
+}

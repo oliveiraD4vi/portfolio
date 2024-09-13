@@ -7,6 +7,14 @@ header.header {
   z-index: 998;
   background-color: $background;
 
+  &.mobile {
+    & > .content {
+      img.logo {
+        width: 1.5rem;
+      }
+    }
+  }
+
   & > .content {
     display: flex;
     align-items: center;

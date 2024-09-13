@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SharedModule } from '../../../shared/shared.module';
 
 @Component({
@@ -8,4 +8,6 @@ import { SharedModule } from '../../../shared/shared.module';
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
-export class FooterComponent {}
+export class FooterComponent {
+  @Input() isMobile: boolean = false;
+}

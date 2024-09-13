@@ -1,4 +1,4 @@
-<header class="element container header">
+<header class="element container header" [class.mobile]="isMobile">
   <div class="content">
     <a
       routerLink="/"
@@ -6,6 +6,7 @@
       ariaCurrentWhenActive="page"
       aria-label="Go to initial page">
       <img
+        class="logo"
         src="../../../../assets/logo/logo.svg"
         alt="Logo of Davi's Portfolio" />
     </a>
