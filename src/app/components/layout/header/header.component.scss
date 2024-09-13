@@ -28,11 +28,11 @@ header.header {
             gap: .25rem;
 
             & > span:last-child {
-              color: $secondary-color;
+              color: $text-color;
               transition: all ease-in-out 200ms;
 
               &:hover {
-                color: $secondary-hover;
+                color: $white-900;
               }
             }
           }

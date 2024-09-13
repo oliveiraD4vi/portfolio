@@ -2,11 +2,10 @@
 
 footer.footer {
   & > .content {
-    border-top: 1px solid $black-100;
-    text-align: center;
-
-    & > .icon {
-      color: $primary-color;
+    .made-by {
+      padding: .5rem 0;
+      border-top: 1px solid $white-700;
+      text-align: center;
     }
   }
 }

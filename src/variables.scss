@@ -15,7 +15,7 @@ $primary-color: #EB5E28;
 $primary-hover: #eb4a0a;
 $secondary-color: #252422;
 $secondary-hover: #333333;
-$background: #FAFAFA;
+$background: #222222;
 
 // --- DEFAULT COLORS ---
 $white-900: #FFFFFF;
@@ -38,4 +38,4 @@ $success-hover: #55c24b;
 $neutral: #006fca;
 $neutral-hover: #498bc2;
 
-$text-color: #333333;
+$text-color: $white-800;
