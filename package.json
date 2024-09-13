@@ -24,6 +24,7 @@
     "@angular/platform-server": "^18.2.4",
     "@angular/router": "^18.2.4",
     "@angular/ssr": "^18.2.4",
+    "@ant-design/icons-angular": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^8.5.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
