@@ -1,0 +1,17 @@
+<button nz-button [nzType]="'primary'" (click)="showModal()">
+  <ng-content select="[button]"></ng-content>
+</button>
+
+<nz-modal [(nzVisible)]="isVisible" (nzOnCancel)="handleClose()">
+  <ng-container *nzModalTitle>
+    <ng-content select="[header]"></ng-content>
+  </ng-container>
+
+  <ng-container *nzModalContent>
+    <ng-content select="[content]"></ng-content>
+  </ng-container>
+
+  <ng-container *nzModalFooter>
+    <ng-content select="[footer]"></ng-content>
+  </ng-container>
+</nz-modal>

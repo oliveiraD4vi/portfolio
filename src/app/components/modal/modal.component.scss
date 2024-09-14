@@ -1,0 +1,11 @@
+@import "../../../variables.scss";
+
+:host ::ng-deep {
+  .ant-modal-content {
+    background-color: $background !important;
+  }
+}
+
+.ant-modal-content {
+    background-color: $background !important;
+  }

@@ -79,3 +79,24 @@
   }
 }
 // END CUSTOM SCROLL
+
+// BEGIN CUSTOM ANTD STYLES
+.ant-modal-header,
+.ant-modal-title,
+.ant-modal-footer,
+.ant-modal-body,
+.ant-modal-content {
+  background-color: $background !important;
+  border: none !important;
+  color: $text-color !important;
+}
+
+.ant-modal-content {
+  box-shadow: none !important;
+}
+
+.ant-modal-close:focus,
+.ant-modal-close:hover {
+  color: $white-900 !important;
+}
+// END CUSTOM ANTD STYLES

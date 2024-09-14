@@ -24,6 +24,7 @@
             <span>GitHub</span>
           </a>
         </li>
+
         <li class="item">
           <a
             href="https://www.linkedin.com/in/davi-oliveira-bb7458187"
@@ -35,8 +36,25 @@
             <span>LinkedIn</span>
           </a>
         </li>
+
         <li class="item">
-          <button nz-button nzType="primary">Contato</button>
+          <app-modal
+            [isVisible]="isVisible"
+            (onOpen)="openContactModal()"
+            (onClose)="closeContactModal()">
+            <div button>Contato</div>
+
+            <div content>
+              CONTEÚDO
+              <!-- TO-DO -->
+            </div>
+
+            <div footer>
+              <button nz-button [nzType]="'primary'" (click)="onSendContact()">
+                Enviar
+              </button>
+            </div>
+          </app-modal>
         </li>
       </ul>
     </nav>
