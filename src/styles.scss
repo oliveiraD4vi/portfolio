@@ -103,4 +103,12 @@
 .ant-btn-default {
   background-color: transparent !important;
 }
+
+.ant-tag {
+  margin: 0 !important;
+}
+
+.ant-tag-has-color {
+  color: $text-color !important;
+}
 // END CUSTOM ANTD STYLES

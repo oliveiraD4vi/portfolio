@@ -1,0 +1,11 @@
+<div class="technologies-container">
+  @for (t of technologies; track t) {
+    <nz-tag [nzColor]="t.color">
+      @if (t.icon) {
+        <span nz-icon [nzType]="t.icon"></span>
+      }
+
+      <span>{{ t.text }}</span>
+    </nz-tag>
+  }
+</div>
