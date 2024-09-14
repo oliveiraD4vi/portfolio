@@ -1,0 +1,17 @@
+<app-modal
+  [isVisible]="isVisible"
+  (onOpen)="openContactModal()"
+  (onClose)="closeContactModal()">
+  <div button>Contato</div>
+
+  <div content>
+    <!-- TO-DO -->
+    CONTEÚDO
+  </div>
+
+  <div footer>
+    <button nz-button [nzType]="'primary'" (click)="onSendContact()">
+      Enviar
+    </button>
+  </div>
+</app-modal>

@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
+import { NzButtonType } from 'ng-zorro-antd/button';
 
 @Component({
   selector: 'app-modal',
@@ -10,6 +11,7 @@ import { SharedModule } from '../../shared/shared.module';
 })
 export class ModalComponent {
   @Input() isVisible: Boolean = false;
+  @Input() buttonType: NzButtonType = 'primary';
 
   @Output() onOpen: EventEmitter<void> = new EventEmitter<void>();
   @Output() onClose: EventEmitter<void> = new EventEmitter<void>();

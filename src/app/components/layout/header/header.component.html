@@ -38,23 +38,7 @@
         </li>
 
         <li class="item">
-          <app-modal
-            [isVisible]="isVisible"
-            (onOpen)="openContactModal()"
-            (onClose)="closeContactModal()">
-            <div button>Contato</div>
-
-            <div content>
-              CONTEÚDO
-              <!-- TO-DO -->
-            </div>
-
-            <div footer>
-              <button nz-button [nzType]="'primary'" (click)="onSendContact()">
-                Enviar
-              </button>
-            </div>
-          </app-modal>
+          <app-contact-modal></app-contact-modal>
         </li>
       </ul>
     </nav>
