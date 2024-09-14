@@ -1,0 +1,9 @@
+@import "../../../variables.scss";
+
+.element.home {
+  & > .content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
